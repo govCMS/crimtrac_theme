@@ -1,3 +1,7 @@
+#block-workbench-block {
+  clear: both;
+}
+
 #header {
   width: 100%;
   max-width: 1006px;
