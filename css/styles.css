@@ -1,0 +1,74 @@
+#header {
+  width: 100%;
+  max-width: 1006px;
+  margin: 0 auto;
+}
+
+.region-navigation {
+  width: 100%;
+  max-width: 1006px;
+  margin: 0 auto;
+}
+
+#page {
+  width: 100%;
+  max-width: 1006px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+#content {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+  max-width: 1006px;
+  margin: 0 auto;
+}
+
+/* police checks */
+#block-block-1 {
+  width: 33%;
+  display: block;
+  float: left;
+}
+
+/* cyber crime */
+#block-block-6 {
+  width: 33%;
+  display: block;
+  float: left;
+  clear: left;
+}
+
+#block-block-11 {
+  width: 66%;
+  height: 146px;
+  float: left;
+  background: #135286;
+  color: #fff;
+  padding: 25px;
+}
+
+.region-navigation {
+  background: #135286;
+  display: block;
+  height: 65px;
+}
+
+#block-superfish-1 {
+  max-width: 1006px;
+  background: #135286;
+}
+
+#page {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background: #adafb2;
+}
+
+#content {
+  padding: 0;
+}

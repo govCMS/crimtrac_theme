@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = GOVCMS STARTERKIT
+name        = crimtrac
 description = Build your own theme for govCMS
 
 
