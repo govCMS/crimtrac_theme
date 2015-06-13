@@ -1,8 +1,23 @@
 #block-block-11 {
-  width: 66%;
+  width: 67%;
   height: 146px;
   float: left;
   background: #135286;
   color: #fff;
-  padding: 25px;
+  padding: 20px;
+  margin: 0 0 0 1.5%;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  p {
+    margin: 0;
+  }
+  .button {
+    background: #fff;
+    color: #135286;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 1rem;
+  }
 }
