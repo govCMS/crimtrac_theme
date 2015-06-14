@@ -23,18 +23,21 @@ Drupal.behaviors.sideMenu = {
       $this.removeClass('is-expanded');
     });
 
-    $menuItem.click(function() {
-      var $this = $(this);
-      if(($this).children('.menu').length && ($this).hasClass('is-expanded')) {
-        $this.children('.menu').slideUp('slow');
-        $this.removeClass('is-expanded');
-        return false;
-      } else {
-        $this.children('.menu').slideDown('slow');
-        $this.addClass('is-expanded');
-        return false;
-      }
+    $menuItem + $(' a').click(function() {
+      var $this = $(this).parent();
+      if(($this).children('.menu').length) {
+        if(($this).hasClass('is-expanded')) {
+          $this.children('.menu').slideUp('slow');
+          $this.removeClass('is-expanded');
+          return false;
+        } else {
+          $this.children('.menu').slideDown('slow');
+          $this.addClass('is-expanded');
+          return false;
+        }
+      }; 
     });
+
   }
 };
 
