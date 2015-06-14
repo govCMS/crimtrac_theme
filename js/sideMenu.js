@@ -27,11 +27,13 @@ Drupal.behaviors.sideMenu = {
       var $this = $(this);
       if(($this).children('.menu').length && ($this).hasClass('is-expanded')) {
         $this.children('.menu').slideUp('slow');
+        $this.removeClass('is-expanded');
+        return false;
       } else {
         $this.children('.menu').slideDown('slow');
+        $this.addClass('is-expanded');
+        return false;
       }
-      $this.toggleClass('is-expanded');
-      return false;
     });
   }
 };
