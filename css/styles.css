@@ -54,8 +54,25 @@
   margin: 0;
 }
 
-.front #page-title {
+.home #page-title {
   display: none;
+}
+
+#header {
+  height: 192px;
+}
+
+.au-mark {
+  width: 105px;
+  height: 77px;
+  margin-top: 67px;
+  float: left;
+  background: url("../images/au-brand.png") no-repeat;
+}
+
+.header__logo {
+  margin-left: 68px;
+  margin-top: 67px;
 }
 
 #block-views-infographics-block {
@@ -82,7 +99,7 @@
 
 #block-block-11 {
   width: 67%;
-  height: 146px;
+  min-height: 138px;
   float: left;
   background: #135286;
   color: #fff;
@@ -136,4 +153,16 @@
 
 #content {
   padding: 0;
+}
+
+.internal-page #content {
+  width: 67%;
+  margin: 0 0 0 1.5%;
+  float: right;
+  background: #fff;
+}
+.internal-page .sidebars {
+  width: 30%;
+  margin: 0 1.5% 0 0;
+  float: right;
 }
