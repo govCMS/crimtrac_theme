@@ -1,0 +1,29 @@
+#block-menu-block-govcms-menu-block-sidebar {
+  .menu__item {
+      background: #135286;
+      a {
+        color: #fff;
+        text-decoration: none;
+
+      }
+    &.expanded {
+      background: #135286 url('../images/menu-toggle.png') no-repeat scroll right 0;
+    }
+    &.expanded.is-expanded {
+      background-position: right -34px;
+    }
+    .menu {
+      display: none;
+      width: 100%;
+      margin: 0;
+      .menu__item {
+        background: #fff;
+        a {
+          color: #135286;
+          background: none;
+        }
+      }
+    }
+  }
+
+}

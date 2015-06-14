@@ -14,10 +14,25 @@
 
 
 // To understand behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+Drupal.behaviors.sideMenu = {
   attach: function(context, settings) {
 
-    // Place your code here.
+    var $menuItem = $('#block-menu-block-govcms-menu-block-sidebar .menu__item');
+    $menuItem.each(function(){
+      $this = $(this);
+      $this.removeClass('is-expanded');
+    });
+
+    $menuItem.click(function() {
+      var $this = $(this);
+      if(($this).children('.menu').length && ($this).hasClass('is-expanded')) {
+        $this.children('.menu').slideUp('slow');
+      } else {
+        $this.children('.menu').slideDown('slow');
+      }
+      $this.toggleClass('is-expanded');
+      return false;
+    });
 
   }
 };
