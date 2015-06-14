@@ -33,7 +33,6 @@ Drupal.behaviors.sideMenu = {
       $this.toggleClass('is-expanded');
       return false;
     });
-
   }
 };
 
