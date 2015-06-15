@@ -93,6 +93,10 @@
   margin: 0 0 0 1.5%;
   padding: 20px;
 }
+#block-views-job-listing-block .views-content {
+  height: 535px;
+  overflow: hidden;
+}
 #block-views-job-listing-block .views-row {
   border: none;
 }
@@ -165,6 +169,10 @@
   background: #fff;
   margin: 0 1.5%;
   padding: 20px;
+}
+#block-views-latest-news-block-1 .views-content {
+  height: 535px;
+  overflow: hidden;
 }
 #block-views-latest-news-block-1 .views-row {
   border: none;
