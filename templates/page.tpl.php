@@ -10,8 +10,9 @@
 
 <header class="header" id="header" role="banner">
   <div class="header__inner">
-    <div class="au-mark"></div>
-
+    <a href="/">
+      <div class="au-mark"></div>
+    </a>
     <?php if ($secondary_menu): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
         <?php print theme('links__system_secondary_menu', array(

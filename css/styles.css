@@ -45,6 +45,9 @@
 #block-block-1 p {
   margin: 0;
 }
+#block-block-1 .block__content:hover {
+  box-shadow: inset 0 0 20px 0 black;
+}
 
 /* cyber crime */
 #block-block-6 {
@@ -56,6 +59,9 @@
 }
 #block-block-6 p {
   margin: 0;
+}
+#block-block-6 .block__content:hover {
+  box-shadow: inset 0 0 20px 0 black;
 }
 
 .home #page-title {
