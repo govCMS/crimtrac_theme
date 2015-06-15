@@ -1,3 +1,7 @@
+body {
+  background: #bcbec0 url('../images/page-background.jpg') no-repeat;
+}
+
 #page {
   @include box-shadow(none);
   background: #adafb2;

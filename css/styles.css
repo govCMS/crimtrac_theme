@@ -2,6 +2,10 @@
   clear: both;
 }
 
+#content .views-row p {
+  margin: 0 0 20px 0;
+}
+
 #header {
   width: 100%;
   max-width: 1006px;
@@ -176,6 +180,10 @@
 }
 #block-views-latest-news-block-1 .views-row {
   border: none;
+}
+
+body {
+  background: #bcbec0 url("../images/page-background.jpg") no-repeat;
 }
 
 #page {
