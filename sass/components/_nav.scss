@@ -1,9 +1,51 @@
 .region-navigation {
-  background: #135286;
+  background: $primary-color;
   display: block;
-  height: 65px;
+  height: 40px;
+  margin-bottom: 30px;
 }
 #block-superfish-1 {
+  font-size: 1.1rem;
   max-width: 1006px;
-  background: #135286;
+  background: $primary-color;
+  li.sf-depth-1 {
+    border-left: 1px solid #001b32;
+    border-right: 1px solid #5392c6;
+    &:first-child {
+      border-left: none;
+    }
+    &:last-child {
+      border-right: none;
+    }
+  }
+  li {
+    > a {
+      background: $primary-color;
+      &:hover {
+        background: #fff;
+        color: $primary-color;
+      }
+    }
+  }
+  li.sfHover {
+    > a.sf-depth-1 {
+      background: #fff;
+      color: $primary-color;
+      }
+    }
+  ul {
+    background: $grey;
+    li {
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+  .sf-depth-3 {
+    a {
+      padding: .3em;
+      background: $primary-color;
+    }
+  }
 }

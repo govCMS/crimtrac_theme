@@ -1,3 +1,8 @@
+body {
+  font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Sans-serif;
+  font-size: 1.2;
+}
+
 #block-workbench-block {
   clear: both;
 }
@@ -105,7 +110,7 @@
   margin: 0 0 0 1.5%;
   padding: 20px;
 }
-#block-views-job-listing-block .views-content {
+#block-views-job-listing-block .view-content {
   height: 535px;
   overflow: hidden;
 }
@@ -140,11 +145,45 @@
 .region-navigation {
   background: #135286;
   display: block;
-  height: 65px;
+  height: 40px;
+  margin-bottom: 30px;
 }
 
 #block-superfish-1 {
+  font-size: 1.1rem;
   max-width: 1006px;
+  background: #135286;
+}
+#block-superfish-1 li.sf-depth-1 {
+  border-left: 1px solid #001b32;
+  border-right: 1px solid #5392c6;
+}
+#block-superfish-1 li.sf-depth-1:first-child {
+  border-left: none;
+}
+#block-superfish-1 li.sf-depth-1:last-child {
+  border-right: none;
+}
+#block-superfish-1 li > a {
+  background: #135286;
+}
+#block-superfish-1 li > a:hover {
+  background: #fff;
+  color: #135286;
+}
+#block-superfish-1 li.sfHover > a.sf-depth-1 {
+  background: #fff;
+  color: #135286;
+}
+#block-superfish-1 ul {
+  background: #bcbec0;
+}
+#block-superfish-1 ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#block-superfish-1 .sf-depth-3 a {
+  padding: .3em;
   background: #135286;
 }
 
@@ -182,7 +221,7 @@
   margin: 0 1.5%;
   padding: 20px;
 }
-#block-views-latest-news-block-1 .views-content {
+#block-views-latest-news-block-1 .view-content {
   height: 535px;
   overflow: hidden;
 }
@@ -216,4 +255,32 @@ body {
   width: 30%;
   margin: 0 1.5% 0 0;
   float: right;
+}
+
+#block-views-slideshow-block .slide__title {
+  font-size: 1.9rem;
+}
+#block-views-slideshow-block .slide__title a {
+  color: #135286;
+  text-decoration: none;
+}
+#block-views-slideshow-block .slide__title a:visited {
+  color: #135286;
+}
+#block-views-slideshow-block .field-name-body {
+  font-size: 1.3rem;
+}
+#block-views-slideshow-block .field-name-field-read-more a {
+  text-decoration: none;
+  color: #fff;
+  background: #135286;
+  padding: 0.4em 0.5em;
+}
+
+.rslides_tabs li {
+  color: #135286;
+}
+.rslides_tabs li.rslides_here {
+  color: #fff;
+  background: #135286;
 }

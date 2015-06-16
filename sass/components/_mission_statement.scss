@@ -2,7 +2,7 @@
   width: 67%;
   min-height: 138px;
   float: left;
-  background: #135286;
+  background: $primary-color;
   color: #fff;
   padding: 20px;
   margin: 0 0 0 1.5%;
@@ -14,7 +14,7 @@
   }
   .button {
     background: #fff;
-    color: #135286;
+    color: $primary-color;
     position: absolute;
     bottom: 20px;
     right: 20px;

@@ -1,0 +1,40 @@
+#block-views-slideshow-block {
+  .group-left {
+
+  }
+  .group-right {
+
+  }
+  .slide__title {
+    font-size: 1.9rem;
+    a {
+      color: $primary-color;
+      text-decoration: none;
+      &:visited {
+        color: $primary-color;
+      }
+    }
+  }
+  .field-name-body {
+    font-size: 1.3rem;
+  }
+  .field-name-field-read-more {
+    a {
+      text-decoration: none;
+      color: #fff;
+      background: $primary-color;
+      padding: 0.4em 0.5em;
+    }
+  }
+}
+
+
+.rslides_tabs {
+  li {
+    color: $primary-color;
+  }
+  li.rslides_here {
+    color: #fff;
+    background: $primary-color;
+  }
+}
