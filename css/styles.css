@@ -45,9 +45,6 @@
 #block-block-1 p {
   margin: 0;
 }
-#block-block-1 .block__content:hover {
-  box-shadow: inset 0 0 20px 0 black;
-}
 
 /* cyber crime */
 #block-block-6 {
@@ -59,9 +56,6 @@
 }
 #block-block-6 p {
   margin: 0;
-}
-#block-block-6 .block__content:hover {
-  box-shadow: inset 0 0 20px 0 black;
 }
 
 .home #page-title {
@@ -93,6 +87,14 @@
 }
 #block-views-infographics-block .views-row {
   border: none;
+}
+
+.brick-notice {
+  color: #b22222;
+}
+
+.page-current-status-of-recruitment-processes .view-footer {
+  margin-top: 100px;
 }
 
 #block-views-job-listing-block {
