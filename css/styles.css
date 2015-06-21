@@ -257,6 +257,11 @@ body {
   float: right;
 }
 
+.section-partners-and-stakeholders article img {
+  width: 25%;
+  float: left;
+}
+
 #block-views-slideshow-block .slide__title {
   font-size: 1.9rem;
 }
