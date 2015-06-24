@@ -127,11 +127,23 @@ body {
   color: #8dd6f7;
 }
 #block-views-job-listing-block .view-content {
-  height: 535px;
+  height: 494px;
   overflow: hidden;
 }
 #block-views-job-listing-block .views-row {
   border: none;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+#block-views-job-listing-block .more-link {
+  padding: 9px 0;
+}
+#block-views-job-listing-block .more-link a, #block-views-job-listing-block .more-link a:visited {
+  background: #135286;
+  color: #fff;
+  padding: 4px 5px;
+  text-decoration: none;
 }
 
 #block-block-11 {
@@ -254,11 +266,23 @@ body {
   color: #8dd6f7;
 }
 #block-views-latest-news-block-1 .view-content {
-  height: 535px;
+  height: 494px;
   overflow: hidden;
 }
 #block-views-latest-news-block-1 .views-row {
   border: none;
+  margin: 1.5em 0 0 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+}
+#block-views-latest-news-block-1 .more-link {
+  padding: 9px 0;
+}
+#block-views-latest-news-block-1 .more-link a, #block-views-latest-news-block-1 .more-link a:visited {
+  background: #135286;
+  color: #fff;
+  padding: 4px 5px;
+  text-decoration: none;
 }
 
 body {
@@ -287,6 +311,10 @@ body {
   width: 30%;
   margin: 0 1.5% 0 0;
   float: right;
+}
+
+article h2 {
+  margin-top: 1.5rem;
 }
 
 .section-partners-and-stakeholders article img {

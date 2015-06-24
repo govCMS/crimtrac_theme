@@ -24,10 +24,22 @@
     color: $secondary-color;
   }
   .view-content {
-    height: 535px;
+    height: 494px;
     overflow: hidden;
   }
   .views-row {
     border: none;
+    margin: 1.5em 0 0 0;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .more-link {
+    padding: 9px 0;
+    a, a:visited {
+      background: $primary-color;
+      color: #fff;
+      padding: 4px 5px;
+      text-decoration: none;
+    }
   }
 }
