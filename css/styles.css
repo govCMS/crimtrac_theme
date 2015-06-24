@@ -63,6 +63,15 @@ body {
   margin: 0;
 }
 
+.view-id-commissioners .views-row {
+  width: 40%;
+  float: left;
+}
+
+#content .view-id-commissioners .views-row {
+  margin-right: 5%;
+}
+
 #footer ul ul ul {
   display: none;
 }
