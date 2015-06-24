@@ -345,8 +345,26 @@ body {
   float: right;
 }
 
+h1.page__title {
+  color: #135286;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  margin: 2rem 0;
+}
+
 article h2 {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  font-size: 3rem;
+  color: #135286;
+  border-bottom: 1px solid #135286;
+}
+article h3 {
+  color: #135286;
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
 }
 
 .section-partners-and-stakeholders article img {

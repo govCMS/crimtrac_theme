@@ -27,8 +27,26 @@ body {
   }
 }
 
+h1.page__title {
+  color: $primary-color;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  margin: 2rem 0;
+}
+
 article {
   h2 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    padding-bottom: .5rem;
+    font-size: 3rem;
+    color: $primary-color;
+    border-bottom: 1px solid $primary-color;
+  }
+  h3 {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
   }
 }
