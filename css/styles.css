@@ -103,6 +103,9 @@ body {
 .home #page-title {
   display: none;
 }
+.home .region-sidebar-second {
+  display: none;
+}
 
 #header {
   height: 192px;
