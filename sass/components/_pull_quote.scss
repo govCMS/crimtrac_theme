@@ -1,16 +1,20 @@
 #block-views-pull-quote-display-block {
+  .open_quote {
+    height: 54px;
+    width: 72px;
+    display: block;
+    background: url('../images/open_quote.png') no-repeat top left;
+  }
+  .close_quote {
+    height: 54px;
+    width: 71px;
+    display: block;
+    background: url('../images/close_quote.png') no-repeat top left;
+  }
   .block__content {
     font-size: 2rem;
     color: #fff;
     background: none;
     line-height: 1.2;
-  }
-  .view-content {
-    background: url('../images/open_quote.png') no-repeat top left;
-    padding-top: 54px;
-  }
-  .views-row {
-    background: url('../images/close_quote.png') no-repeat bottom right;
-    padding-bottom: 54px;
   }
 }
