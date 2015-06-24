@@ -63,6 +63,10 @@ body {
   margin: 0;
 }
 
+#footer ul ul ul {
+  display: none;
+}
+
 .home #page-title {
   display: none;
 }
