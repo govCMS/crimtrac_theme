@@ -262,10 +262,21 @@ body {
   float: left;
 }
 
+#block-views-pull-quote-display-block {
+  margin-top: 100px;
+}
 #block-views-pull-quote-display-block .block__content {
   font-size: 2rem;
   color: #fff;
   background: none;
+  line-height: 1.2;
+}
+#block-views-pull-quote-display-block .view-content {
+  background: url("../images/open-quote.png") no-repeat -54px left;
+}
+#block-views-pull-quote-display-block .views-row {
+  background: url("../images/close-quote.png") no-repeat bottom right;
+  padding-bottom: 54px;
 }
 
 #block-views-slideshow-block .slide__title {
