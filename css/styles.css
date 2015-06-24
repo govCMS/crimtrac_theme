@@ -262,9 +262,6 @@ body {
   float: left;
 }
 
-#block-views-pull-quote-display-block {
-  margin-top: 100px;
-}
 #block-views-pull-quote-display-block .block__content {
   font-size: 2rem;
   color: #fff;
@@ -272,7 +269,8 @@ body {
   line-height: 1.2;
 }
 #block-views-pull-quote-display-block .view-content {
-  background: url("../images/open_quote.png") no-repeat -54px left;
+  background: url("../images/open_quote.png") no-repeat top left;
+  padding-top: 54px;
 }
 #block-views-pull-quote-display-block .views-row {
   background: url("../images/close_quote.png") no-repeat bottom right;
