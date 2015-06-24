@@ -273,6 +273,7 @@ body {
   width: 71px;
   display: block;
   background: url("../images/close_quote.png") no-repeat top left;
+  float: right;
 }
 #block-views-pull-quote-display-block .block__content {
   font-size: 2rem;
