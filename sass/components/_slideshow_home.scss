@@ -32,9 +32,24 @@
 .rslides_tabs {
   li {
     color: $primary-color;
+    a {
+      color: $primary-color
+    }
   }
   li.rslides_here {
     color: #fff;
     background: $primary-color;
+    a {
+      color: #fff;
+    }
+  }
+  li {
+    a.pause {
+      background: url('../images/featured-articles-pause.png') no-repeat 0px -27px; 
+    }
+    a.pause.paused {
+      background-color: $primary-color;
+      color: #fff;
+    }
   }
 }

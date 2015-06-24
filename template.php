@@ -7,6 +7,14 @@
  * @see https://drupal.org/node/1728096
  */
 
+/**
+ * Implements hook_css_alter().
+ */
+
+function crimtrac_js_alter(&$js) {
+  unset($js[drupal_get_path('theme', 'govcms_zen') . '/js/script.js']);
+}
+
 
 /**
  * Override or insert variables into the maintenance page template.

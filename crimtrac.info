@@ -65,6 +65,7 @@ stylesheets[all][] = css/styles.css
 
 ; Optionally add some JavaScripts to your theme.
 
+scripts[] = js/govCMS-override.js
 scripts[] = js/sideMenu.js
 
 

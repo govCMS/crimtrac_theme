@@ -369,7 +369,20 @@ article h2 {
 .rslides_tabs li {
   color: #135286;
 }
+.rslides_tabs li a {
+  color: #135286;
+}
 .rslides_tabs li.rslides_here {
   color: #fff;
   background: #135286;
+}
+.rslides_tabs li.rslides_here a {
+  color: #fff;
+}
+.rslides_tabs li a.pause {
+  background: url("../images/featured-articles-pause.png") no-repeat 0px -27px;
+}
+.rslides_tabs li a.pause.paused {
+  background-color: #135286;
+  color: #fff;
 }
