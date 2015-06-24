@@ -94,6 +94,10 @@ body {
   border: none;
 }
 
+#main #block-views-infographics-block {
+  margin-bottom: -450px;
+}
+
 .brick-notice {
   color: #b22222;
 }
