@@ -121,6 +121,10 @@ body {
   margin-top: 67px;
 }
 
+.field-name-field-info-graphic {
+  margin-top: 30px;
+}
+
 #block-views-infographics-block {
   width: 30%;
   float: left;
