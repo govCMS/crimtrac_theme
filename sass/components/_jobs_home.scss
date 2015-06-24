@@ -5,6 +5,24 @@
   background: #fff;
   margin: 0 0 0 1.5%;
   padding: 20px;
+  h2 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    border-bottom: 10px solid $secondary-color;
+    padding-bottom: 10px;
+  }
+  h3 {
+    a, a:visited {
+      color: $primary-color;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  .date-display-single {
+    color: $secondary-color;
+  }
   .view-content {
     height: 535px;
     overflow: hidden;
