@@ -6,4 +6,16 @@
   .view-footer {
     margin-top: 100px;
   }
+  table {
+    width: 100%;
+    th {
+      width: 20%;
+    }
+    th.views-field-title {
+      width: 30%;
+    }
+    th.views-field-field-job-contact-officer {
+      width: 30%;
+    }
+  }
 }

@@ -13,3 +13,16 @@
   width: 100%;
   display: block;
 }
+
+#block-menu-block-govcms-menu-block-footer {
+  background: #41749e;
+}
+
+.menu-block-govcms_menu_block-footer > ul > li {
+  a, a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}

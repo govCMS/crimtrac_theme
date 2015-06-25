@@ -106,6 +106,17 @@ body {
   display: block;
 }
 
+#block-menu-block-govcms-menu-block-footer {
+  background: #41749e;
+}
+
+.menu-block-govcms_menu_block-footer > ul > li a, .menu-block-govcms_menu_block-footer > ul > li a:visited {
+  text-decoration: none;
+}
+.menu-block-govcms_menu_block-footer > ul > li a:hover {
+  text-decoration: underline;
+}
+
 .home #page-title {
   display: none;
 }
@@ -154,6 +165,18 @@ body {
 
 .page-current-status-of-recruitment-processes .view-footer {
   margin-top: 100px;
+}
+.page-current-status-of-recruitment-processes table {
+  width: 100%;
+}
+.page-current-status-of-recruitment-processes table th {
+  width: 20%;
+}
+.page-current-status-of-recruitment-processes table th.views-field-title {
+  width: 30%;
+}
+.page-current-status-of-recruitment-processes table th.views-field-field-job-contact-officer {
+  width: 30%;
 }
 
 #block-views-job-listing-block {
