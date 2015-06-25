@@ -424,6 +424,10 @@ article .field-name-body img {
   color: #fff;
 }
 
+#views-exposed-form-publications-page .views-submit-button .form-submit {
+  margin-top: .6em;
+}
+
 #block-views-pull-quote-display-block .open_quote {
   height: 54px;
   width: 72px;
