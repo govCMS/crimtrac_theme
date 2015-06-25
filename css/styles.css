@@ -405,6 +405,25 @@ article .field-name-body img {
   float: left;
 }
 
+.view-publications .field-name-field-image {
+  width: 18%;
+  float: left;
+}
+.view-publications .group-details {
+  width: 80%;
+  float: left;
+}
+.view-publications .inline {
+  display: block;
+  float: right;
+  padding: 5px;
+  color: #fff;
+  background: #135286;
+}
+.view-publications .inline a, .view-publications .inline a:visited {
+  color: #fff;
+}
+
 #block-views-pull-quote-display-block .open_quote {
   height: 54px;
   width: 72px;

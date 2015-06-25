@@ -1,0 +1,20 @@
+.view-publications {
+  .field-name-field-image {
+    width: 18%;
+    float: left;
+  }
+  .group-details {
+    width: 80%;
+    float: left;
+  }
+  .inline {
+    display: block;
+    float: right;
+    padding: 5px;
+    color: #fff;
+    background: $primary-color;
+    a, a:visited {
+      color: #fff;
+    }
+  }
+}
