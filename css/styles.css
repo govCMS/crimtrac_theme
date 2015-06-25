@@ -396,6 +396,9 @@ article h3 {
   margin-top: 2rem;
   margin-bottom: 0;
 }
+article .field-name-body img {
+  margin: 0 15px 15px;
+}
 
 .section-partners-and-stakeholders article img {
   width: 25%;
