@@ -193,6 +193,14 @@ body {
   padding: 4px 5px;
   text-decoration: none;
 }
+#block-views-job-listing-block .field-name-field-job-permanency {
+  float: left;
+  clear: left;
+}
+#block-views-job-listing-block .field-name-field-job-type {
+  float: left;
+  margin-left: 10px;
+}
 
 #block-block-11 {
   width: 67%;
