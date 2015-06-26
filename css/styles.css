@@ -110,6 +110,14 @@ body {
   background: #41749e;
 }
 
+#block-menu-menu-footer-sub-menu {
+  background: #005f8b;
+  text-align: right;
+}
+#block-menu-menu-footer-sub-menu a, #block-menu-menu-footer-sub-menu a:visited {
+  color: #fff;
+}
+
 .menu-block-govcms_menu_block-footer > ul > li a, .menu-block-govcms_menu_block-footer > ul > li a:visited {
   text-decoration: none;
 }
