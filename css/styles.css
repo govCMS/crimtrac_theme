@@ -430,6 +430,7 @@ article .field-name-body img {
 .section-partners-and-stakeholders article img {
   width: 25%;
   float: left;
+  margin: 0;
 }
 
 .view-publications .field-name-field-image {
