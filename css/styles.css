@@ -241,6 +241,9 @@ body {
   float: left;
   margin-left: 10px;
 }
+#block-views-job-listing-block .field-name-field-classification {
+  margin-bottom: 0;
+}
 
 #block-block-11 {
   width: 67%;
