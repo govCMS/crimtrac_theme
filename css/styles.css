@@ -394,6 +394,10 @@ body {
   line-height: 1.5;
 }
 
+body.large-fonts #page {
+  font-size: 1.3rem;
+}
+
 #content {
   padding: 0;
 }
