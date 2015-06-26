@@ -7,15 +7,19 @@
     margin-top: 100px;
   }
   table {
+    caption {
+      color: $primary-color;
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      text-align: left;
+    }
     width: 100%;
     th {
-      width: 20%;
+      width: 30%;
     }
     th.views-field-title {
-      width: 30%;
-    }
-    th.views-field-field-job-contact-officer {
-      width: 30%;
+      width: 40%;
     }
   }
 }

@@ -169,14 +169,18 @@ body {
 .page-current-status-of-recruitment-processes table {
   width: 100%;
 }
+.page-current-status-of-recruitment-processes table caption {
+  color: #135286;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
 .page-current-status-of-recruitment-processes table th {
-  width: 20%;
+  width: 30%;
 }
 .page-current-status-of-recruitment-processes table th.views-field-title {
-  width: 30%;
-}
-.page-current-status-of-recruitment-processes table th.views-field-field-job-contact-officer {
-  width: 30%;
+  width: 40%;
 }
 
 #block-views-job-listing-block {
