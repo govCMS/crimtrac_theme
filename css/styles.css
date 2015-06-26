@@ -1,6 +1,5 @@
 body {
   font-family: Trebuchet, "Trebuchet MS", Verdana, Arial, Sans-serif;
-  font-size: 1.2;
 }
 
 #block-workbench-block {
@@ -112,7 +111,7 @@ body {
 
 #block-menu-menu-footer-sub-menu {
   background: #005f8b;
-  text-align: right;
+  color: #fff;
 }
 #block-menu-menu-footer-sub-menu a, #block-menu-menu-footer-sub-menu a:visited {
   color: #fff;
@@ -391,6 +390,8 @@ body {
   -webkit-box-shadow: none;
   box-shadow: none;
   background: #adafb2;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 #content {
