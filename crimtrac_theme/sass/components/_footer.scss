@@ -16,6 +16,24 @@
 
 #block-menu-block-govcms-menu-block-footer {
   background: #41749e;
+
+  .menu-block-govcms_menu_block-footer > ul > li {
+    width: 100%;
+    margin-bottom: 15px;
+
+    @include breakpoint($minor) {
+      width: 50%;
+    }
+
+    @include breakpoint($medium) {
+      width: 33%;
+    }
+
+    @include breakpoint($large) {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
 }
 
 #block-menu-menu-footer-sub-menu {

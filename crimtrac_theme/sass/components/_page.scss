@@ -21,17 +21,22 @@ body.large-fonts {
 
 .internal-page {
   #content {
-    width: 67%;
-    margin: 0 0 0 1.5%;
-    float: right;
     background: #fff;
     padding: 20px;
   }
 
-  .sidebars {
-    width: 30%;
-    margin: 0 1.5% 0 0;
-    float: right;
+  @include breakpoint($medium) {
+    #content {
+      width: 67%;
+      margin: 0 0 0 1.5%;
+      float: left;
+    }
+
+    .sidebars {
+      width: 30%;
+      margin: 0 1.5% 0 0;
+      float: left;
+    }
   }
 }
 

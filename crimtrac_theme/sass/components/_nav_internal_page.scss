@@ -1,4 +1,6 @@
 #block-menu-block-govcms-menu-block-sidebar {
+  display: none;
+
   .menu__item {
       background: $primary-color;
       a {
@@ -26,4 +28,7 @@
     }
   }
 
+  @include breakpoint($large) {
+    display: block;
+  }
 }

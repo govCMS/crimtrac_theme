@@ -1,15 +1,31 @@
 #block-views-infographics-block {
-  width: 30%;
-  float: left;
-  position: relative;
-  top: -450px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+
   .views-row {
     border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  img {
+    margin: auto;
+  }
+
+  @include breakpoint($medium) {
+    position: relative;
+    top: -450px;
+    width: 30%;
+    float: left;
+    padding: 0;
   }
 }
 
-#main {
-  #block-views-infographics-block {
-    margin-bottom: -450px;
+@include breakpoint($medium) {
+  #main {
+    #block-views-infographics-block {
+      margin-bottom: -450px;
+    }
   }
 }

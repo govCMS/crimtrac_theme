@@ -3,6 +3,24 @@
   display: block;
   height: 40px;
   margin-bottom: 30px;
+  padding: 7px;
+
+  @include breakpoint($large) {
+    padding: 0;
+  }
+
+  .block__content > .menu {
+    @include show-at($large, block);
+  }
+
+  .block__content > .tinynav {
+    @include breakpoint($medium) {
+      display: block;
+    }
+    @include breakpoint($large) {
+      display: none;
+    }
+  }
 }
 #block-superfish-1 {
   font-size: 1.1rem;
