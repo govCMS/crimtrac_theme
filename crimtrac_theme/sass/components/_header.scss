@@ -2,15 +2,52 @@
   height: 192px;
 }
 
-.au-mark {
-  width: 105px;
+.header__logo {
+  max-width: 535px;
+  width: 80%;
   height: 77px;
-  margin-top: 67px;
-  float: left;
-  background: url('../images/au-brand.png') no-repeat;
+
+  @include bp-nq($medium) {
+    margin-top: 67px;
+  }
+
+  .au-mark {
+    width: 20%;
+    height: 100%;
+    float: left;
+
+    > span {
+      background: url('../images/au-brand.png') no-repeat;
+      background-size: contain;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .header__logo-image {
+    width: 67%;
+    float: right;
+  }
 }
 
-.header__logo {
-  margin-left: 68px;
-  margin-top: 67px;
+.header {
+
+  .block-govcms-text-resize {
+    @include medium-screens {
+      position: absolute;
+      right: 215px;
+      bottom: -38px;
+      z-index: 100;
+    }
+  }
+
+  .block-search-api-page {
+    @include medium-screens {
+      position: absolute;
+      right: 0px;
+      bottom: -34px;
+      z-index: 100;
+    }
+  }
 }
