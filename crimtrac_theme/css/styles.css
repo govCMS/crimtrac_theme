@@ -235,6 +235,29 @@ body {
     margin-bottom: -450px;
   }
 }
+.view-job-listing .field-name-field-classification,
+.view-job-listing .field-name-field-job-permanency,
+.view-job-listing .field-name-field-job-type {
+  display: inline-block;
+}
+.view-job-listing .field-name-field-classification .field-items > div:after,
+.view-job-listing .field-name-field-job-permanency .field-items > div:after,
+.view-job-listing .field-name-field-job-type .field-items > div:after {
+  content: "|";
+  color: transparent;
+  border-right: 1px solid #5f5f5f;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 0;
+}
+.view-job-listing .field-name-field-classification:last-child .field-items > div:after,
+.view-job-listing .field-name-field-job-permanency:last-child .field-items > div:after,
+.view-job-listing .field-name-field-job-type:last-child .field-items > div:after {
+  display: none;
+}
+
 .brick-notice {
   color: #b22222;
 }
@@ -561,6 +584,29 @@ article h3 {
 }
 article .field-name-body img {
   margin: 0 15px 15px;
+}
+article .field-name-body a {
+  text-decoration: none;
+}
+
+.field-type-text-with-summary .file,
+.field-type-text-long .file {
+  display: block;
+}
+.field-type-text-with-summary .file img,
+.field-type-text-long .file img {
+  float: left;
+  margin-right: 5px;
+}
+.field-type-text-with-summary ul,
+.field-type-text-long ul {
+  list-style: initial;
+  margin-left: 2.5em;
+  margin-right: 1.5em;
+}
+.field-type-text-with-summary ul > li,
+.field-type-text-long ul > li {
+  margin-bottom: 0.7em;
 }
 
 .section-partners-and-stakeholders article img {
