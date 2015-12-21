@@ -1,0 +1,12 @@
+.search-form + h2 + ul,
+.search-api-page-results > h2 + ul {
+
+  q {
+    quotes: none;
+
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+}
