@@ -43,7 +43,11 @@
   }
 
   .block-search-api-page {
-    @include medium-screens {
+    @include breakpoint(449px max-width) {
+      bottom: -67px;
+    }
+
+    @include breakpoint(450px ($large - 1px)) {
       position: absolute;
       right: 0px;
       bottom: -34px;

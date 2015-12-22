@@ -113,4 +113,11 @@ a[href*="//"] {
       margin-left: 4px;
     }
   }
+
+  .file &,
+  .view-slideshow & {
+    &:after {
+      display: none;
+    }
+  }
 }

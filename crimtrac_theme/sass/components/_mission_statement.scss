@@ -11,9 +11,6 @@
   .button {
     background: #fff;
     color: $primary-color;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
     font-size: 1rem;
   }
 
@@ -22,5 +19,14 @@
     min-height: 138px;
     float: left;
     margin: 0 0 0 1.5%;
+  }
+
+  @include breakpoint($large) {
+
+    .button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }
