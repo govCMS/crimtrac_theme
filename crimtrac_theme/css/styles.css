@@ -224,7 +224,12 @@ body {
     z-index: 100;
   }
 }
-@media (max-width: 979px) {
+@media (max-width: 449px) {
+  .header .block-search-api-page {
+    bottom: -67px;
+  }
+}
+@media (min-width: 450px) and (max-width: 979px) {
   .header .block-search-api-page {
     position: absolute;
     right: 0px;
@@ -385,9 +390,6 @@ body {
 #block-block-11 .button {
   background: #fff;
   color: #135286;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
   font-size: 1rem;
 }
 @media (min-width: 720px) {
@@ -396,6 +398,13 @@ body {
     min-height: 138px;
     float: left;
     margin: 0 0 0 1.5%;
+  }
+}
+@media (min-width: 980px) {
+  #block-block-11 .button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
   }
 }
 
@@ -648,6 +657,9 @@ a[href*="//"]:not([href*="crimtrac.local"]):after, a[href*="//"]:not([href*="gov
   background: url("../images/external_link.png") no-repeat;
   background-size: contain;
   margin-left: 4px;
+}
+.file a[href*="//"]:after, .view-slideshow a[href*="//"]:after {
+  display: none;
 }
 
 .section-partners-and-stakeholders article img {
