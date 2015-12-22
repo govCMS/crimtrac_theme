@@ -95,3 +95,22 @@ article {
     }
   }
 }
+
+a[href*="//"] {
+
+  &:not([href*="crimtrac.local"]),
+  &:not([href*="govcms.acsitefactory.com"]),
+  &:not([href*="crimtrac.gov.au"]) {
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      background: url('../images/external_link.png') no-repeat;
+      background-size: contain;
+      margin-left: 4px;
+    }
+  }
+}

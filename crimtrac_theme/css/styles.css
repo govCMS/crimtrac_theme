@@ -137,6 +137,36 @@ body {
 #block-menu-menu-footer-sub-menu a, #block-menu-menu-footer-sub-menu a:visited {
   color: #fff;
 }
+#block-menu-menu-footer-sub-menu ul > li {
+  width: 100%;
+}
+#block-menu-menu-footer-sub-menu ul > li a {
+  padding-left: 0;
+}
+#block-menu-menu-footer-sub-menu ul > li a:before {
+  display: none;
+}
+@media (min-width: 420px) {
+  #block-menu-menu-footer-sub-menu ul > li {
+    width: 50%;
+  }
+}
+@media (min-width: 720px) {
+  #block-menu-menu-footer-sub-menu ul > li {
+    width: 33%;
+  }
+}
+@media (min-width: 980px) {
+  #block-menu-menu-footer-sub-menu ul > li {
+    width: auto;
+  }
+  #block-menu-menu-footer-sub-menu ul > li a {
+    padding-left: 0.7em;
+  }
+  #block-menu-menu-footer-sub-menu ul > li a:before {
+    display: block;
+  }
+}
 
 .menu-block-govcms_menu_block-footer > ul > li a, .menu-block-govcms_menu_block-footer > ul > li a:visited {
   text-decoration: none;
@@ -609,6 +639,17 @@ article .field-name-body a {
   margin-bottom: 0.7em;
 }
 
+a[href*="//"]:not([href*="crimtrac.local"]):after, a[href*="//"]:not([href*="govcms.acsitefactory.com"]):after, a[href*="//"]:not([href*="crimtrac.gov.au"]):after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url("../images/external_link.png") no-repeat;
+  background-size: contain;
+  margin-left: 4px;
+}
+
 .section-partners-and-stakeholders article img {
   width: 25%;
   float: left;
@@ -667,6 +708,16 @@ article .pull-quote {
   background-image: url("../images/article-quote-open.png"), url("../images/article-quote-close.png");
   background-position: left top, right bottom;
   background-repeat: no-repeat;
+}
+
+.search-form + h2 + ul q,
+.search-api-page-results > h2 + ul q {
+  quotes: none;
+}
+.search-form + h2 + ul q:before, .search-form + h2 + ul q:after,
+.search-api-page-results > h2 + ul q:before,
+.search-api-page-results > h2 + ul q:after {
+  display: none;
 }
 
 #block-views-slideshow-block .slide__title {
