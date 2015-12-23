@@ -67,6 +67,7 @@ stylesheets[all][] = css/styles.css
 
 scripts[] = js/govCMS-override.js
 scripts[] = js/sideMenu.js
+scripts[] = js/externalLinks.js
 
 
 
