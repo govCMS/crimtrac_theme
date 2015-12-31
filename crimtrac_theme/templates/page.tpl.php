@@ -12,21 +12,23 @@
   <div class="header__inner">
     <?php if ($secondary_menu): ?>
       <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
-        <?php print theme('links__system_secondary_menu', array(
-          'links' => $secondary_menu,
-          'attributes' => array(
-            'class' => array(
-              'links',
-              'inlineLinks--bordered--double',
-              'clearfix',
+        <dl>
+          <?php print theme('links__system_secondary_menu', array(
+            'links' => $secondary_menu,
+            'attributes' => array(
+              'class' => array(
+                'links',
+                'inlineLinks--bordered--double',
+                'clearfix',
+              ),
             ),
-          ),
-          'heading' => array(
-            'text' => isset($secondary_menu_heading) ? $secondary_menu_heading : '',
-            'level' => 'h2',
-            'class' => array('element-invisible'),
-          ),
-        )); ?>
+            'heading' => array(
+              'text' => isset($secondary_menu_heading) ? $secondary_menu_heading : '',
+              'level' => 'dt',
+              'class' => array('element-invisible'),
+            ),
+          )); ?>
+        </dl>
       </nav>
     <?php endif; ?>
 
