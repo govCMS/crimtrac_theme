@@ -47,6 +47,10 @@ body {
 .breadcrumb a {
   color: #33afe5;
 }
+.breadcrumb dl,
+.breadcrumb dd {
+  margin: 0;
+}
 
 #block-block-1,
 #block-block-6 {
@@ -236,6 +240,11 @@ body {
     bottom: -34px;
     z-index: 100;
   }
+}
+
+.header__secondary-menu dl,
+.header__secondary-menu dd {
+  margin: 0;
 }
 
 .field-name-field-info-graphic {
@@ -591,7 +600,7 @@ body.large-fonts #page {
   .internal-page #content {
     width: 67%;
     margin: 0 0 0 1.5%;
-    float: left;
+    float: right;
   }
   .internal-page .sidebars {
     width: 30%;
@@ -658,7 +667,7 @@ a[href*="//"]:not([href*="crimtrac.local"]):after, a[href*="//"]:not([href*="gov
   background-size: contain;
   margin-left: 4px;
 }
-.file a[href*="//"]:after, .view-slideshow a[href*="//"]:after {
+.file a[href*="//"]:after, .view-slideshow a[href*="//"]:after, .block__content > p > a[href*="//"]:after {
   display: none;
 }
 

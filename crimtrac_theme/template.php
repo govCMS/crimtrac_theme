@@ -195,3 +195,140 @@ function crimtrac_search_help($path, $arg) {
 </ul>');
   }
 }
+
+/**
+ * Implementing theme_links for the system_secondary_menu context
+ * to wrap the <ul> with a <dd> tag
+ *
+ * @see theme_links
+ */
+function crimtrac_links__system_secondary_menu(&$variables) {
+  $links = $variables['links'];
+  $attributes = $variables['attributes'];
+  $heading = $variables['heading'];
+  global $language_url;
+  $output = '';
+
+  if (count($links) > 0) {
+    // Treat the heading first if it is present to prepend it to the
+    // list of links.
+    if (!empty($heading)) {
+      if (is_string($heading)) {
+        // Prepare the array that will be used when the passed heading
+        // is a string.
+        $heading = array(
+          'text' => $heading,
+          // Set the default level of the heading.
+          'level' => 'h2',
+        );
+      }
+      $output .= '<' . $heading['level'];
+      if (!empty($heading['class'])) {
+        $output .= drupal_attributes(array('class' => $heading['class']));
+      }
+      $output .= '>' . check_plain($heading['text']) . '</' . $heading['level'] . '>';
+    }
+
+    $output .= '<dd><ul' . drupal_attributes($attributes) . '>';
+
+    $num_links = count($links);
+    $i = 1;
+
+    foreach ($links as $key => $link) {
+      $class = array($key);
+
+      // Add first, last and active classes to the list of links to help out themers.
+      if ($i == 1) {
+        $class[] = 'first';
+      }
+      if ($i == $num_links) {
+        $class[] = 'last';
+      }
+      if (isset($link['href']) && ($link['href'] == $_GET['q'] || ($link['href'] == '<front>' && drupal_is_front_page()))
+        && (empty($link['language']) || $link['language']->language == $language_url->language)) {
+        $class[] = 'active';
+      }
+      $output .= '<li' . drupal_attributes(array('class' => $class)) . '>';
+
+      if (isset($link['href'])) {
+        // Pass in $link as $options, they share the same keys.
+        $output .= l($link['title'], $link['href'], $link);
+      }
+      elseif (!empty($link['title'])) {
+        // Some links are actually not links, but we wrap these in <span> for adding title and class attributes.
+        if (empty($link['html'])) {
+          $link['title'] = check_plain($link['title']);
+        }
+        $span_attributes = '';
+        if (isset($link['attributes'])) {
+          $span_attributes = drupal_attributes($link['attributes']);
+        }
+        $output .= '<span' . $span_attributes . '>' . $link['title'] . '</span>';
+      }
+
+      $i++;
+      $output .= "</li>\n";
+    }
+
+    $output .= '</ul></dd>';
+  }
+
+  return $output;
+}
+
+/**
+ * Override the zen_breadcrumb function to
+ * replace h2 with dl
+ */
+function crimtrac_breadcrumb(&$variables) {
+  $breadcrumb = $variables['breadcrumb'];
+  $output = '';
+
+  // Determine if we are to display the breadcrumb.
+  $show_breadcrumb = theme_get_setting('zen_breadcrumb');
+  if ($show_breadcrumb == 'yes' || $show_breadcrumb == 'admin' && arg(0) == 'admin') {
+
+    // Optionally get rid of the homepage link.
+    $show_breadcrumb_home = theme_get_setting('zen_breadcrumb_home');
+    if (!$show_breadcrumb_home) {
+      array_shift($breadcrumb);
+    }
+
+    // Return the breadcrumb with separators.
+    if (!empty($breadcrumb)) {
+      $breadcrumb_separator = filter_xss_admin(theme_get_setting('zen_breadcrumb_separator'));
+      $trailing_separator = $title = '';
+      if (theme_get_setting('zen_breadcrumb_title')) {
+        $item = menu_get_item();
+        if (!empty($item['tab_parent'])) {
+          // If we are on a non-default tab, use the tab's title.
+          $breadcrumb[] = check_plain($item['title']);
+        }
+        else {
+          $breadcrumb[] = drupal_get_title();
+        }
+      }
+      elseif (theme_get_setting('zen_breadcrumb_trailing')) {
+        $trailing_separator = $breadcrumb_separator;
+      }
+
+      // Provide a navigational heading to give context for breadcrumb links to
+      // screen-reader users.
+      if (empty($variables['title'])) {
+        $variables['title'] = t('You are here');
+      }
+      // Unless overridden by a preprocess function, make the heading invisible.
+      if (!isset($variables['title_attributes_array']['class'])) {
+        $variables['title_attributes_array']['class'][] = 'element-invisible';
+      }
+
+      // Build the breadcrumb trail.
+      $output = '<nav class="breadcrumb" role="navigation">';
+      $output .= '<dl><dt' . drupal_attributes($variables['title_attributes_array']) . '>' . $variables['title'] . '</dt>';
+      $output .= '<dd><ol><li>' . implode($breadcrumb_separator . '</li><li>', $breadcrumb) . $trailing_separator . '</li></ol></dd></dl>';
+      $output .= '</nav>';
+    }
+  }
+
+  return $output;
+}

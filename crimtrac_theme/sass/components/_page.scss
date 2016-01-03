@@ -29,7 +29,7 @@ body.large-fonts {
     #content {
       width: 67%;
       margin: 0 0 0 1.5%;
-      float: left;
+      float: right;
     }
 
     .sidebars {
@@ -115,7 +115,8 @@ a[href*="//"] {
   }
 
   .file &,
-  .view-slideshow & {
+  .view-slideshow &,
+  .block__content > p > & {
     &:after {
       display: none;
     }
