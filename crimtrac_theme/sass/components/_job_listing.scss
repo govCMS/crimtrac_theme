@@ -1,0 +1,28 @@
+.view-job-listing {
+  .field-name-field-classification,
+  .field-name-field-job-permanency,
+  .field-name-field-job-type {
+    display: inline-block;
+
+    .field-items > div {
+      &:after {
+        content: "|";
+        color: transparent;
+        border-right: 1px solid #5f5f5f;
+        display: inline-block;
+        line-height: 1;
+        margin-right: 5px;
+        margin-left: 5px;
+        width: 0;
+      }
+    }
+
+    &:last-child {
+      .field-items > div {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -3,6 +3,7 @@
 // This file should be processed using SASS, and will generate
 // CSS files in the CSS folder.
 @import "compass/css3";
+@import "breakpoints";
 @import 'init';
 @import 'base';
 @import 'layout';

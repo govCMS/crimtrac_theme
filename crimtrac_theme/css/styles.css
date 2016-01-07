@@ -47,28 +47,33 @@ body {
 .breadcrumb a {
   color: #33afe5;
 }
-
-/* police checks */
-#block-block-1 {
-  width: 30%;
-  display: block;
-  float: left;
-  margin: 0 1.5% 0 0;
-}
-#block-block-1 p {
+.breadcrumb dl,
+.breadcrumb dd {
   margin: 0;
 }
 
-/* cyber crime */
+#block-block-1,
 #block-block-6 {
-  width: 30%;
-  display: block;
-  float: left;
+  width: 100%;
+  background: white;
   clear: left;
-  margin: 0 1.5% 0 0;
 }
-#block-block-6 p {
-  margin: 0;
+#block-block-1 img,
+#block-block-6 img {
+  margin: auto;
+}
+@media (min-width: 720px) {
+  #block-block-1,
+  #block-block-6 {
+    width: 30%;
+    display: block;
+    float: left;
+    margin: 0 1.5% 0 0;
+  }
+  #block-block-1 p,
+  #block-block-6 p {
+    margin: 0;
+  }
 }
 
 .view-id-commissioners .views-row {
@@ -108,6 +113,26 @@ body {
 #block-menu-block-govcms-menu-block-footer {
   background: #41749e;
 }
+#block-menu-block-govcms-menu-block-footer .menu-block-govcms_menu_block-footer > ul > li {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media (min-width: 420px) {
+  #block-menu-block-govcms-menu-block-footer .menu-block-govcms_menu_block-footer > ul > li {
+    width: 50%;
+  }
+}
+@media (min-width: 720px) {
+  #block-menu-block-govcms-menu-block-footer .menu-block-govcms_menu_block-footer > ul > li {
+    width: 33%;
+  }
+}
+@media (min-width: 980px) {
+  #block-menu-block-govcms-menu-block-footer .menu-block-govcms_menu_block-footer > ul > li {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
 
 #block-menu-menu-footer-sub-menu {
   background: #005f8b;
@@ -115,6 +140,36 @@ body {
 }
 #block-menu-menu-footer-sub-menu a, #block-menu-menu-footer-sub-menu a:visited {
   color: #fff;
+}
+#block-menu-menu-footer-sub-menu ul > li {
+  width: 100%;
+}
+#block-menu-menu-footer-sub-menu ul > li a {
+  padding-left: 0;
+}
+#block-menu-menu-footer-sub-menu ul > li a:before {
+  display: none;
+}
+@media (min-width: 420px) {
+  #block-menu-menu-footer-sub-menu ul > li {
+    width: 50%;
+  }
+}
+@media (min-width: 720px) {
+  #block-menu-menu-footer-sub-menu ul > li {
+    width: 33%;
+  }
+}
+@media (min-width: 980px) {
+  #block-menu-menu-footer-sub-menu ul > li {
+    width: auto;
+  }
+  #block-menu-menu-footer-sub-menu ul > li a {
+    padding-left: 0.7em;
+  }
+  #block-menu-menu-footer-sub-menu ul > li a:before {
+    display: block;
+  }
 }
 
 .menu-block-govcms_menu_block-footer > ul > li a, .menu-block-govcms_menu_block-footer > ul > li a:visited {
@@ -135,17 +190,61 @@ body {
   height: 192px;
 }
 
-.au-mark {
-  width: 105px;
+.header__logo {
+  max-width: 535px;
+  width: 80%;
   height: 77px;
+}
+@media (min-width: 720px) {
+  .header__logo {
+    margin-top: 67px;
+  }
+}
+.lt-ie9 .header__logo {
   margin-top: 67px;
+}
+.header__logo .au-mark {
+  width: 20%;
+  height: 100%;
   float: left;
+}
+.header__logo .au-mark > span {
   background: url("../images/au-brand.png") no-repeat;
+  background-size: contain;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header__logo .header__logo-image {
+  width: 67%;
+  float: right;
 }
 
-.header__logo {
-  margin-left: 68px;
-  margin-top: 67px;
+@media (max-width: 979px) {
+  .header .block-govcms-text-resize {
+    position: absolute;
+    right: 215px;
+    bottom: -38px;
+    z-index: 100;
+  }
+}
+@media (max-width: 449px) {
+  .header .block-search-api-page {
+    bottom: -67px;
+  }
+}
+@media (min-width: 450px) and (max-width: 979px) {
+  .header .block-search-api-page {
+    position: absolute;
+    right: 0px;
+    bottom: -34px;
+    z-index: 100;
+  }
+}
+
+.header__secondary-menu dl,
+.header__secondary-menu dd {
+  margin: 0;
 }
 
 .field-name-field-info-graphic {
@@ -153,17 +252,54 @@ body {
 }
 
 #block-views-infographics-block {
-  width: 30%;
-  float: left;
-  position: relative;
-  top: -450px;
+  width: 100%;
+  background: white;
+  padding: 20px;
 }
 #block-views-infographics-block .views-row {
   border: none;
+  padding: 0;
+  margin: 0;
+}
+#block-views-infographics-block img {
+  margin: auto;
+}
+@media (min-width: 720px) {
+  #block-views-infographics-block {
+    position: relative;
+    top: -450px;
+    width: 30%;
+    float: left;
+    padding: 0;
+  }
 }
 
-#main #block-views-infographics-block {
-  margin-bottom: -450px;
+@media (min-width: 720px) {
+  #main #block-views-infographics-block {
+    margin-bottom: -450px;
+  }
+}
+.view-job-listing .field-name-field-classification,
+.view-job-listing .field-name-field-job-permanency,
+.view-job-listing .field-name-field-job-type {
+  display: inline-block;
+}
+.view-job-listing .field-name-field-classification .field-items > div:after,
+.view-job-listing .field-name-field-job-permanency .field-items > div:after,
+.view-job-listing .field-name-field-job-type .field-items > div:after {
+  content: "|";
+  color: transparent;
+  border-right: 1px solid #5f5f5f;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 0;
+}
+.view-job-listing .field-name-field-classification:last-child .field-items > div:after,
+.view-job-listing .field-name-field-job-permanency:last-child .field-items > div:after,
+.view-job-listing .field-name-field-job-type:last-child .field-items > div:after {
+  display: none;
 }
 
 .brick-notice {
@@ -191,11 +327,7 @@ body {
 }
 
 #block-views-job-listing-block {
-  width: 32%;
-  height: 605px;
-  float: left;
   background: #fff;
-  margin: 0 0 0 1.5%;
   padding: 20px;
 }
 #block-views-job-listing-block h2 {
@@ -244,15 +376,19 @@ body {
 #block-views-job-listing-block .field-name-field-classification {
   margin-bottom: 0;
 }
+@media (min-width: 720px) {
+  #block-views-job-listing-block {
+    width: 32%;
+    height: 605px;
+    float: left;
+    margin: 0 0 0 1.5%;
+  }
+}
 
 #block-block-11 {
-  width: 67%;
-  min-height: 138px;
-  float: left;
   background: #135286;
   color: #fff;
   padding: 20px;
-  margin: 0 0 0 1.5%;
   position: relative;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -263,10 +399,22 @@ body {
 #block-block-11 .button {
   background: #fff;
   color: #135286;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
   font-size: 1rem;
+}
+@media (min-width: 720px) {
+  #block-block-11 {
+    width: 67%;
+    min-height: 138px;
+    float: left;
+    margin: 0 0 0 1.5%;
+  }
+}
+@media (min-width: 980px) {
+  #block-block-11 .button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+  }
 }
 
 .region-navigation {
@@ -274,6 +422,33 @@ body {
   display: block;
   height: 40px;
   margin-bottom: 30px;
+  padding: 7px;
+}
+@media (min-width: 980px) {
+  .region-navigation {
+    padding: 0;
+  }
+}
+.region-navigation .block__content > .menu {
+  display: none;
+}
+@media (min-width: 980px) {
+  .region-navigation .block__content > .menu {
+    display: block;
+  }
+}
+.lt-ie9 .region-navigation .block__content > .menu {
+  display: block;
+}
+@media (min-width: 720px) {
+  .region-navigation .block__content > .tinynav {
+    display: block;
+  }
+}
+@media (min-width: 980px) {
+  .region-navigation .block__content > .tinynav {
+    display: none;
+  }
 }
 
 #block-superfish-1 {
@@ -314,6 +489,9 @@ body {
   background: #135286;
 }
 
+#block-menu-block-govcms-menu-block-sidebar {
+  display: none;
+}
 #block-menu-block-govcms-menu-block-sidebar .menu__item {
   background: #135286;
 }
@@ -339,13 +517,14 @@ body {
   color: #135286;
   background: none;
 }
+@media (min-width: 980px) {
+  #block-menu-block-govcms-menu-block-sidebar {
+    display: block;
+  }
+}
 
 #block-views-latest-news-block-1 {
-  width: 32%;
-  height: 605px;
-  float: left;
   background: #fff;
-  margin: 0 1.5%;
   padding: 20px;
 }
 #block-views-latest-news-block-1 h2 {
@@ -383,6 +562,14 @@ body {
   padding: 4px 5px;
   text-decoration: none;
 }
+@media (min-width: 720px) {
+  #block-views-latest-news-block-1 {
+    width: 32%;
+    height: 605px;
+    float: left;
+    margin: 0 1.5%;
+  }
+}
 
 body {
   background: #bcbec0 url("../images/page-background.jpg") no-repeat top center;
@@ -406,16 +593,20 @@ body.large-fonts #page {
 }
 
 .internal-page #content {
-  width: 67%;
-  margin: 0 0 0 1.5%;
-  float: right;
   background: #fff;
   padding: 20px;
 }
-.internal-page .sidebars {
-  width: 30%;
-  margin: 0 1.5% 0 0;
-  float: right;
+@media (min-width: 720px) {
+  .internal-page #content {
+    width: 67%;
+    margin: 0 0 0 1.5%;
+    float: right;
+  }
+  .internal-page .sidebars {
+    width: 30%;
+    margin: 0 1.5% 0 0;
+    float: left;
+  }
 }
 
 h1.page__title {
@@ -441,6 +632,43 @@ article h3 {
 }
 article .field-name-body img {
   margin: 0 15px 15px;
+}
+article .field-name-body a {
+  text-decoration: none;
+}
+
+.field-type-text-with-summary .file,
+.field-type-text-long .file {
+  display: block;
+}
+.field-type-text-with-summary .file img,
+.field-type-text-long .file img {
+  float: left;
+  margin-right: 5px;
+}
+.field-type-text-with-summary ul,
+.field-type-text-long ul {
+  list-style: initial;
+  margin-left: 2.5em;
+  margin-right: 1.5em;
+}
+.field-type-text-with-summary ul > li,
+.field-type-text-long ul > li {
+  margin-bottom: 0.7em;
+}
+
+a[href*="//"]:not([href*="crimtrac.local"]):after, a[href*="//"]:not([href*="govcms.acsitefactory.com"]):after, a[href*="//"]:not([href*="crimtrac.gov.au"]):after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url("../images/external_link.png") no-repeat;
+  background-size: contain;
+  margin-left: 4px;
+}
+.file a[href*="//"]:after, .view-slideshow a[href*="//"]:after, .block__content > p > a[href*="//"]:after {
+  display: none;
 }
 
 .section-partners-and-stakeholders article img {
@@ -501,6 +729,16 @@ article .pull-quote {
   background-image: url("../images/article-quote-open.png"), url("../images/article-quote-close.png");
   background-position: left top, right bottom;
   background-repeat: no-repeat;
+}
+
+.search-form + h2 + ul q,
+.search-api-page-results > h2 + ul q {
+  quotes: none;
+}
+.search-form + h2 + ul q:before, .search-form + h2 + ul q:after,
+.search-api-page-results > h2 + ul q:before,
+.search-api-page-results > h2 + ul q:after {
+  display: none;
 }
 
 #block-views-slideshow-block .slide__title {

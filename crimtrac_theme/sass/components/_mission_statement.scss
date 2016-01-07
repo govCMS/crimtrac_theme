@@ -1,11 +1,7 @@
 #block-block-11 {
-  width: 67%;
-  min-height: 138px;
-  float: left;
   background: $primary-color;
   color: #fff;
   padding: 20px;
-  margin: 0 0 0 1.5%;
   position: relative;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -15,9 +11,22 @@
   .button {
     background: #fff;
     color: $primary-color;
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
     font-size: 1rem;
+  }
+
+  @include breakpoint($medium) {
+    width: 67%;
+    min-height: 138px;
+    float: left;
+    margin: 0 0 0 1.5%;
+  }
+
+  @include breakpoint($large) {
+
+    .button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
   }
 }

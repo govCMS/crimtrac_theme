@@ -21,17 +21,22 @@ body.large-fonts {
 
 .internal-page {
   #content {
-    width: 67%;
-    margin: 0 0 0 1.5%;
-    float: right;
     background: #fff;
     padding: 20px;
   }
 
-  .sidebars {
-    width: 30%;
-    margin: 0 1.5% 0 0;
-    float: right;
+  @include breakpoint($medium) {
+    #content {
+      width: 67%;
+      margin: 0 0 0 1.5%;
+      float: right;
+    }
+
+    .sidebars {
+      width: 30%;
+      margin: 0 1.5% 0 0;
+      float: left;
+    }
   }
 }
 
@@ -60,6 +65,60 @@ article {
   .field-name-body {
     img {
       margin: 0 15px 15px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.field-type-text-with-summary,
+.field-type-text-long {
+
+  .file {
+    display: block;
+
+    img {
+      float: left;
+      margin-right: 5px;
+    }
+  }
+
+  ul {
+    list-style: initial;
+    margin-left: 2.5em;
+    margin-right: 1.5em;
+
+    > li {
+      margin-bottom: 0.7em;
+    }
+  }
+}
+
+a[href*="//"] {
+
+  &:not([href*="crimtrac.local"]),
+  &:not([href*="govcms.acsitefactory.com"]),
+  &:not([href*="crimtrac.gov.au"]) {
+
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      background: url('../images/external_link.png') no-repeat;
+      background-size: contain;
+      margin-left: 4px;
+    }
+  }
+
+  .file &,
+  .view-slideshow &,
+  .block__content > p > & {
+    &:after {
+      display: none;
     }
   }
 }

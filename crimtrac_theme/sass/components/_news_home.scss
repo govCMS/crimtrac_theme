@@ -1,9 +1,5 @@
 #block-views-latest-news-block-1 {
-  width: 32%;
-  height: 605px;
-  float: left;
   background: #fff;
-  margin: 0 1.5%;  
   padding: 20px;
   h2 {
     font-size: 2.5rem;
@@ -41,5 +37,12 @@
       padding: 4px 5px;
       text-decoration: none;
     }
+  }
+
+  @include breakpoint($medium) {
+    width: 32%;
+    height: 605px;
+    float: left;
+    margin: 0 1.5%;
   }
 }
