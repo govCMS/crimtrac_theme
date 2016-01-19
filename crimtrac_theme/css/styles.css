@@ -482,6 +482,12 @@ body {
   padding: .3em;
   background: #135286;
 }
+#block-superfish-1 li.sf-depth-2,
+#block-superfish-1 li.sf-depth-3 {
+  white-space: normal;
+  float: none;
+  width: 100%;
+}
 
 #block-menu-block-govcms-menu-block-sidebar {
   display: none;

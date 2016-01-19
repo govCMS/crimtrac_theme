@@ -66,4 +66,11 @@
       background: $primary-color;
     }
   }
+
+  li.sf-depth-2,
+  li.sf-depth-3 {
+    white-space: normal;
+    float: none;
+    width: 100%;
+  }
 }
