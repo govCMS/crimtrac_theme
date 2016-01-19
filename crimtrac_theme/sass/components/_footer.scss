@@ -9,9 +9,16 @@
 }
 
 #block-block-16 {
-  height: 90px;
   width: 100%;
   display: block;
+
+  a {
+    display: inline-block;
+  }
+
+  @include breakpoint($minor) {
+    height: 90px;
+  }
 }
 
 #block-menu-block-govcms-menu-block-footer {

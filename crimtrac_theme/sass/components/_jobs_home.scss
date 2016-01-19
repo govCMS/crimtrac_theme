@@ -20,7 +20,6 @@
     color: $secondary-color;
   }
   .view-content {
-    height: 494px;
     overflow: hidden;
   }
   .views-row {
@@ -38,21 +37,9 @@
       text-decoration: none;
     }
   }
-  .field-name-field-job-permanency {
-    float: left;
-    clear: left;
-  }
-  .field-name-field-job-type {
-    float: left;
-    margin-left: 10px;
-  }
-  .field-name-field-classification {
-    margin-bottom: 0;
-  }
 
   @include breakpoint($medium) {
     width: 32%;
-    height: 605px;
     float: left;
     margin: 0 0 0 1.5%;
   }

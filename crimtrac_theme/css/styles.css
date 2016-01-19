@@ -105,9 +105,16 @@ body {
 }
 
 #block-block-16 {
-  height: 90px;
   width: 100%;
   display: block;
+}
+#block-block-16 a {
+  display: inline-block;
+}
+@media (min-width: 420px) {
+  #block-block-16 {
+    height: 90px;
+  }
 }
 
 #block-menu-block-govcms-menu-block-footer {
@@ -347,7 +354,6 @@ body {
   color: #8dd6f7;
 }
 #block-views-job-listing-block .view-content {
-  height: 494px;
   overflow: hidden;
 }
 #block-views-job-listing-block .views-row {
@@ -365,21 +371,9 @@ body {
   padding: 4px 5px;
   text-decoration: none;
 }
-#block-views-job-listing-block .field-name-field-job-permanency {
-  float: left;
-  clear: left;
-}
-#block-views-job-listing-block .field-name-field-job-type {
-  float: left;
-  margin-left: 10px;
-}
-#block-views-job-listing-block .field-name-field-classification {
-  margin-bottom: 0;
-}
 @media (min-width: 720px) {
   #block-views-job-listing-block {
     width: 32%;
-    height: 605px;
     float: left;
     margin: 0 0 0 1.5%;
   }
@@ -544,7 +538,6 @@ body {
   color: #8dd6f7;
 }
 #block-views-latest-news-block-1 .view-content {
-  height: 494px;
   overflow: hidden;
 }
 #block-views-latest-news-block-1 .views-row {
@@ -565,7 +558,6 @@ body {
 @media (min-width: 720px) {
   #block-views-latest-news-block-1 {
     width: 32%;
-    height: 605px;
     float: left;
     margin: 0 1.5%;
   }
@@ -611,9 +603,14 @@ body.large-fonts #page {
 
 h1.page__title {
   color: #135286;
-  font-size: 3.8rem;
+  font-size: 2.6rem;
   line-height: 1.2;
   margin: 2rem 0;
+}
+@media (min-width: 720px) {
+  h1.page__title {
+    font-size: 3.8rem;
+  }
 }
 
 article h2 {
