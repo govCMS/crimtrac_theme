@@ -42,9 +42,13 @@ body.large-fonts {
 
 h1.page__title {
   color: $primary-color;
-  font-size: 3.8rem;
+  font-size: 2.6rem;
   line-height: 1.2;
   margin: 2rem 0;
+
+  @include breakpoint($medium) {
+    font-size: 3.8rem;
+  }
 }
 
 article {
