@@ -15,10 +15,18 @@
 
   @include breakpoint($medium) {
     position: relative;
-    top: -540px;
+    top: -700px;
     width: 30%;
     float: left;
     padding: 0;
+  }
+
+  @include breakpoint(800px) {
+    top: -650px;
+  }
+
+  @include breakpoint(860px) {
+    top: -600px;
   }
 }
 
