@@ -43,38 +43,38 @@
 
             // set the height
             var setBlocksHeight = debounce(function() {
-                var $blocks = $('#block-views-latest-news-block-1, #block-views-job-listing-block');
-                var $blocksContentBlocks = $blocks.find('.view-content');
+                var blocks = $('#block-views-latest-news-block-1, #block-views-job-listing-block');
+                var blocksContentBlocks = blocks.find('.view-content');
                 if ($(window).width() >= 720) {
-                    var $newsBlock = $('#block-views-latest-news-block-1');
-                    var $jobsBlock = $('#block-views-job-listing-block');
-                    var newsBlockHeight = $newsBlock.height();
-                    var jobsBlockHeight = $jobsBlock.height();
-                    var $higherBlock = $newsBlock;
-                    var $higherBlockcontentBlock;
-                    var $rows;
+                    var newsBlock = $('#block-views-latest-news-block-1');
+                    var jobsBlock = $('#block-views-job-listing-block');
+                    var newsBlockHeight = newsBlock.height();
+                    var jobsBlockHeight = jobsBlock.height();
+                    var higherBlock = newsBlock;
+                    var higherBlockContentBlock;
+                    var rows;
                     var calculatedHeight = 0;
 
                     // determine the higher block
                     if (jobsBlockHeight > newsBlockHeight) {
-                        $higherBlock = $jobsBlock;
+                        higherBlock = jobsBlock;
                     }
 
-                    $higherBlockcontentBlock = $higherBlock.find('.view-content');
-                    $rows = $higherBlockcontentBlock.find('> .views-row');
-                    $rows.each(function (index) {
+                    higherBlockContentBlock = higherBlock.find('.view-content');
+                    rows = higherBlockContentBlock.find('> .views-row');
+                    rows.each(function (index) {
                         if (index <= 2) {
                             calculatedHeight += this.scrollHeight;
                         }
                     });
-                    $blocksContentBlocks.height(calculatedHeight + 20);
-                    $blocks.height(calculatedHeight + 131);
+                    blocksContentBlocks.height(calculatedHeight + 20);
+                    blocks.height(calculatedHeight + 131);
                 }
                 else {
-                    $blocks.height('auto');
-                    $blocksContentBlocks.height('auto');
+                    blocks.height('auto');
+                    blocksContentBlocks.height('auto');
                 }
-            }, 250);
+            }, 0);
 
             // first call
             setBlocksHeight();
@@ -83,11 +83,6 @@
             $(window).resize(function () {
                 setBlocksHeight();
             });
-	    
-	    $(window).ready(function() {
-	        setBlocksHeight();
-	    });
-
         }
     };
 
