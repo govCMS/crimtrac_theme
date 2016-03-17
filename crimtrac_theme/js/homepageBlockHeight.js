@@ -44,35 +44,25 @@
             // set the height
             var setBlocksHeight = debounce(function() {
                 var blocks = $('#block-views-latest-news-block-1, #block-views-job-listing-block');
-                var blocksContentBlocks = blocks.find('.view-content');
+                //var blocksContentBlocks = blocks.find('.view-content');
                 if ($(window).width() >= 720) {
                     var newsBlock = $('#block-views-latest-news-block-1');
                     var jobsBlock = $('#block-views-job-listing-block');
                     var newsBlockHeight = newsBlock.height();
                     var jobsBlockHeight = jobsBlock.height();
-                    var higherBlock = newsBlock;
-                    var higherBlockContentBlock;
-                    var rows;
-                    var calculatedHeight = 0;
-
+                    var higherBlockPx = newsBlockHeight;
                     // determine the higher block
                     if (jobsBlockHeight > newsBlockHeight) {
-                        higherBlock = jobsBlock;
+                        higherBlockPx = jobsBlockHeight;
                     }
 
-                    higherBlockContentBlock = higherBlock.find('.view-content');
-                    rows = higherBlockContentBlock.find('> .views-row');
-                    rows.each(function (index) {
-                        if (index <= 2) {
-                            calculatedHeight += this.scrollHeight;
-                        }
-                    });
-                    blocksContentBlocks.height(calculatedHeight + 20);
-                    blocks.height(calculatedHeight + 131);
+
+                    //blocksContentBlocks.height(calculatedHeight + 20);
+                    $('#block-views-infographics-block').css("top", 0 - higherBlockPx + 100);
                 }
                 else {
                     blocks.height('auto');
-                    blocksContentBlocks.height('auto');
+                    //blocksContentBlocks.height('auto');
                 }
             }, 0);
 
@@ -83,9 +73,8 @@
             $(window).resize(function () {
                 setBlocksHeight();
             });
-
-            setTimeout(setBlocksHeight(), 2000);
         }
     };
 
 })(jQuery, Drupal, this, this.document);
+
