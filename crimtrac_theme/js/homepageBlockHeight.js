@@ -83,6 +83,10 @@
             $(window).resize(function () {
                 setBlocksHeight();
             });
+	    
+	    $(window).ready(function() {
+	        setBlocksHeight();
+	    });
 
         }
     };
