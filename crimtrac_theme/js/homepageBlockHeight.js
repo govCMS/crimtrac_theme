@@ -84,9 +84,7 @@
                 setBlocksHeight();
             });
 
-            $(window).onload(function() {
-               setBlocksHeight();
-            });
+            setTimeout(setBlocksHeight(), 2000);
         }
     };
 
